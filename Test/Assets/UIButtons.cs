@@ -58,7 +58,7 @@ public class UIButtons : MonoBehaviour
         }
     }
 
-    //Changes thne amount that the player is running
+    //Changes the amount that the player is running
     public void RunSlider()
     {
         //Checks if the dropdown is on Run
@@ -66,5 +66,11 @@ public class UIButtons : MonoBehaviour
         {
             m_player.SetFloat("X_Velocity", m_runSlider.value);
         }
+    }
+
+    //Causes the application to quit
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
